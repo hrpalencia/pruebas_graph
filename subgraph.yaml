@@ -7,6 +7,7 @@ dataSources:
     network: near-mainnet
     source:
       account: "freehorsesspartans.freehorses.near"
+      startBlock: 66499781
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
