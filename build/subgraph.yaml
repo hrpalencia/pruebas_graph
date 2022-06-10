@@ -1,12 +1,12 @@
 specVersion: 0.0.4
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: near
     name: free_horses
     network: near-mainnet
     source:
-      account: "freehorsesspartans.freehorses.near"
+      account: freehorsesspartans.freehorses.near
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
@@ -14,4 +14,4 @@ dataSources:
         - Token
       receiptHandlers:
         - handler: handleReceipt
-      file: ./src/free-horses.ts
+      file: free_horses\free_horses.wasm
